@@ -1,0 +1,8 @@
+//
+// Created by User on 2026/10/29.
+//
+
+#ifndef KERNFORGE_DAQ_INTERNAL_H
+#define KERNFORGE_DAQ_INTERNAL_H
+
+#endif //KERNFORGE_DAQ_INTERNAL_H

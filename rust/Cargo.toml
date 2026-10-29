@@ -1,0 +1,24 @@
+[workspace]
+resolver = "2"
+members = [
+  "crates/kf/common",
+  "crates/kf/platform",
+  "crates/kf/kernel-observe",
+  "crates/kf/process",
+  "crates/kf/resource",
+  "crates/kf/supervisor",
+  "crates/kf/signal",
+  "crates/kf/ipc",
+  "crates/kf/policy",
+  "crates/kf/observability",
+  "crates/kf/supervisord",
+  "crates/kf/agent",
+  "crates/kf/probe",
+  "crates/kf/ctl",
+  "xtask",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"

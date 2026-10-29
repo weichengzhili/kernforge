@@ -1,0 +1,17 @@
+[Unit]
+Description=KernForge Process Lifecycle Supervisor
+After=systemd-udevd.service
+Before=multi-user.target
+
+[Service]
+Type=notify
+ExecStart=/usr/local/bin/supervisord
+Restart=always
+RestartSec=1
+OOMPolicy=stop
+OOMScoreAdjust=-1000
+Slice=kf.slice
+Delegate=yes
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+version: 1
+groups:
+  - name: control-plane
+    cgroup:
+      pids_max: 128
+      memory_max: "512M"
+    scheduling:
+      policy: SCHED_FIFO
+      priority: 80
+    oom_score_adj: -1000
