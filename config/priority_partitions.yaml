@@ -1,0 +1,18 @@
+# KernForge priority partition table
+version: 1
+partitions:
+  - name: safety
+    range: [90, 99]
+    purpose: hardware watchdog, safe-stop path
+  - name: control
+    range: [70, 89]
+    purpose: control loops, motion control
+  - name: industrial_network
+    range: [50, 69]
+    purpose: EtherCAT/PROFINET user-space stacks
+  - name: monitoring
+    range: [1, 49]
+    purpose: metrics, logging
+  - name: general
+    range: [0, 0]
+    purpose: SCHED_OTHER default

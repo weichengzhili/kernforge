@@ -1,0 +1,12 @@
+[package]
+name = "kernel-observe"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+name = "kernel_observe"
+path = "src/lib.rs"
+
+[dependencies]
+common = { path = "../common" }

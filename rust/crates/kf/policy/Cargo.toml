@@ -1,0 +1,12 @@
+[package]
+name = "policy"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+name = "policy"
+path = "src/lib.rs"
+
+[dependencies]
+common = { path = "../common" }

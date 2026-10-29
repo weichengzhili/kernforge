@@ -1,0 +1,2 @@
+// KernForge / ipc
+// Module entry point. Private helpers use pub(crate); public API uses pub.

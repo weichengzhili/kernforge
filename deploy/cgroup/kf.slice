@@ -1,0 +1,6 @@
+[Slice]
+CPUAccounting=yes
+MemoryAccounting=yes
+PidsAccounting=yes
+MemoryMax=80%
+PidsMax=4096

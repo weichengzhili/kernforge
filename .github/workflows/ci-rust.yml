@@ -1,0 +1,10 @@
+name: ci-rust
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: cargo build --manifest-path rust/Cargo.toml
+      - run: cargo clippy --manifest-path rust/Cargo.toml -- -D warnings
+      - run: cargo test --manifest-path rust/Cargo.toml

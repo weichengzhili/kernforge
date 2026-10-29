@@ -1,0 +1,15 @@
+include(CTest)
+
+# Auto-generated from CPP_MODULES + integration/realtime.
+add_subdirectory(common)
+add_subdirectory(platform)
+add_subdirectory(kernel_observe)
+add_subdirectory(process)
+add_subdirectory(resource)
+add_subdirectory(supervisor)
+add_subdirectory(signal)
+add_subdirectory(ipc)
+add_subdirectory(policy)
+add_subdirectory(observability)
+add_subdirectory(integration)
+add_subdirectory(realtime)
